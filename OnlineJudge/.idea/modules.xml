@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/10300_Ecological_Premium/10300_Ecological_Premium.iml" filepath="$PROJECT_DIR$/10300_Ecological_Premium/10300_Ecological_Premium.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10307_Killing_Aliens_in_Borg_Maze2/10307_Killing_Aliens_in_Borg_Maze2.iml" filepath="$PROJECT_DIR$/10307_Killing_Aliens_in_Borg_Maze2/10307_Killing_Aliens_in_Borg_Maze2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10307_Killing_Aliens_in_Borg_Maze3/10307_Killing_Aliens_in_Borg_Maze3.iml" filepath="$PROJECT_DIR$/10307_Killing_Aliens_in_Borg_Maze3/10307_Killing_Aliens_in_Borg_Maze3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10307_Killling_Aliens_in_Borg_Maze/10307_Killling_Aliens_in_Borg_Maze.iml" filepath="$PROJECT_DIR$/10307_Killling_Aliens_in_Borg_Maze/10307_Killling_Aliens_in_Borg_Maze.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10608_Friends/10608_Friends.iml" filepath="$PROJECT_DIR$/10608_Friends/10608_Friends.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10608_Friends_2/10608_Friends_2.iml" filepath="$PROJECT_DIR$/10608_Friends_2/10608_Friends_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10878_Decode_the_Tape/10878_Decode_the_Tape.iml" filepath="$PROJECT_DIR$/10878_Decode_the_Tape/10878_Decode_the_Tape.iml" />
+      <module fileurl="file://$PROJECT_DIR$/374_Big_Mod/374_Big_Mod.iml" filepath="$PROJECT_DIR$/374_Big_Mod/374_Big_Mod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/591_Box_of_Bricks/591_Box_of_Bricks.iml" filepath="$PROJECT_DIR$/591_Box_of_Bricks/591_Box_of_Bricks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/839_Not_so_Mobile/839_Not_so_Mobile.iml" filepath="$PROJECT_DIR$/839_Not_so_Mobile/839_Not_so_Mobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OnlineJudge.iml" filepath="$PROJECT_DIR$/OnlineJudge.iml" />
+    </modules>
+  </component>
+</project>
