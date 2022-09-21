@@ -1,4 +1,7 @@
 # Online judge assignements for the DA405E course at Malmö university
+
+Modules with numbers for iterations have the solution in the highest # module. With earlier attempts saved for reference.
+
 ## Solved 
 Section 1. Startup problems
 
