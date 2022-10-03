@@ -30,9 +30,9 @@ Section 3. Arithmetics, divide & conquer and greedy algorithms
 Section 4. Dynamic programming and heuristics
 
 - 10943 - How do you add?
-## Not Solved 
 
 - 116 - Unidirectional TSP
+## Not Solved 
 
 - 185 - Roman Numerals
 
