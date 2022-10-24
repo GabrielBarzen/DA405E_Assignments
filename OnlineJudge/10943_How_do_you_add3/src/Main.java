@@ -23,8 +23,7 @@ public class Main {
         if (precalculate[n][k] != 0){
             return precalculate[n][k];
         }
-        if (k <= 1) return k;
-        if (n == 1) return k;
+        if (k <= 1 || n == 1) return k;
         //if not calculated then calculate and assign it in array
         //For all i=0...n add calculate(i,k-1) to current array.
         //Then mod 1000000
