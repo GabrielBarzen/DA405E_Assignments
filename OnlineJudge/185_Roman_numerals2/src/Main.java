@@ -70,15 +70,19 @@ public class Main {
             }
 
             int numSolutions = -1;
+            //RULE AB+CD = A Not possible
             if (addend1.length > sum.length || addend2.length > sum.length) {
                 numSolutions = 0;
             }
+            //RULE AB+CD = ABCDEFG
             if (sum.length > addend1.length+1 && sum.length > addend2.length+1) {
                 numSolutions = 0;
             }
+            //RULE A+A=A
             if (characters.size() == 1) {
                 numSolutions = 0;
             }
+
             HashMap<Character,Integer> charNum = new HashMap<>();
             for (Character character : characters) {
                 charNum.put(character,0);
