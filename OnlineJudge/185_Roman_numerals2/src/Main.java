@@ -74,11 +74,11 @@ public class Main {
             if (addend1.length > sum.length || addend2.length > sum.length) {
                 numSolutions = 0;
             }
-            //RULE AB+CD = ABCDEFG
+            //RULE AB+CD = ABCDEFG Not possible
             if (sum.length > addend1.length+1 && sum.length > addend2.length+1) {
                 numSolutions = 0;
             }
-            //RULE A+A=A
+            //RULE A+A=A Not Possible
             if (characters.size() == 1) {
                 numSolutions = 0;
             }
