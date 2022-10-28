@@ -22,7 +22,6 @@ public class Main {
         char[] romanNumearls = roman.toCharArray();
         int result = 0;
         for (int i = 0; i < romanNumearls.length; i++) {
-
             if (!(i+1 == romanNumearls.length)) {
                 if (lookupTable.get(romanNumearls[i]) < lookupTable.get(romanNumearls[i + 1])) {
 
@@ -55,7 +54,6 @@ public class Main {
                 result += "Incorrect ";
             }
 
-
             char[] addend1 = split[0].toCharArray();
             char[] addend2 = split[1].toCharArray();
             char[] sum = split[2].toCharArray();
@@ -70,7 +68,6 @@ public class Main {
             for (char c : sum) {
                 characters.add(c);
             }
-
 
             int numSolutions = -1;
             if (addend1.length > sum.length || addend2.length > sum.length) {
@@ -101,7 +98,6 @@ public class Main {
             }
 
             System.out.println(result);
-
         }
     }
 
@@ -112,7 +108,6 @@ public class Main {
                 if (i == prevI) {
                     continue;
                 }
-
                 charNum.put(allChars[numIdx], i);
                 result += backtrack(i,addend1, addend2, sum, charNum, allChars, numIdx+1);
                 if (numIdx == allChars.length-1) {
@@ -125,7 +120,6 @@ public class Main {
     }
 
     private static int solve(char[] addend1, char[] addend2, char[] summ, HashMap<Character,Integer> charNum) {
-
         int add1 = toInt(addend1, charNum);
         int add2 = toInt(addend2, charNum);
         int sum  = toInt(summ, charNum);
@@ -150,8 +144,4 @@ public class Main {
         }
         return result;
     }
-
-
-
-
 }
