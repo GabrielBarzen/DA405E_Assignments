@@ -127,7 +127,7 @@ public class Main {
         int add1 = toInt(addend1, charNum);
         int add2 = toInt(addend2, charNum);
         int sum  = toInt(summ, charNum);
-        if (!(add1 * add2 == 0 || sum == 0)) {
+        if (!(add1 * add2 * sum == 0)) {
             if (add1 + add2 == sum) {
                 return 1;
             } else {
