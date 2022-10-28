@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class Main {
+public class test {
 
     static final String VALID = "valid";
     static final String IMPOSSIBLE = "impossible";

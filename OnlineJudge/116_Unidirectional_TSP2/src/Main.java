@@ -170,15 +170,10 @@ public class Main {
                 y = yOpt[2];
             }
 
-
             minPath[x] = y;
-
         }
-
 
         return minPath;
     }
-
-
 
 }
