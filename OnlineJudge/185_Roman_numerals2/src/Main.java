@@ -35,7 +35,7 @@ public class Main {
         }
         return result;
     }
-    private static int outIter = 1;
+
     public static void main(String[] args) {
         init();
         Scanner scanner = new Scanner(System.in);
@@ -101,7 +101,7 @@ public class Main {
             }
 
             System.out.println(result);
-            outIter++;
+
         }
     }
 
