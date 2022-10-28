@@ -36,18 +36,22 @@ public class Main {
     }
 
     public static void main(String[] args) {
+
         init();
         Scanner scanner = new Scanner(System.in);
 
         while (scanner.hasNextLine()) {
+
             String input = scanner.nextLine();
             if (input.equals("#")) break;
+
             String result = "";
             String[] split = input.split("[+,=]+");
 
             int firstAddend = romanArabic(split[0]);
             int secondAddend = romanArabic(split[1]);
             int sumR = romanArabic(split[2]);
+
             if (firstAddend + secondAddend == sumR) {
                 result += "Correct ";
             }  else {
@@ -58,15 +62,10 @@ public class Main {
             char[] addend2 = split[1].toCharArray();
             char[] sum = split[2].toCharArray();
 
-            HashSet<Character> characters = new HashSet<Character>();
-            for (char c : addend1) {
-                characters.add(c);
-            }
-            for (char c : addend2) {
-                characters.add(c);
-            }
-            for (char c : sum) {
-                characters.add(c);
+            HashMap<Character,Integer> charNum = new HashMap<>();
+
+            for (char c : input.replaceAll("[+,=]+", "").toCharArray()) {
+                charNum.put(c,0);
             }
 
             int numSolutions = -1;
@@ -79,16 +78,11 @@ public class Main {
                 numSolutions = 0;
             }
             //RULE A+A=A Not Possible
-            if (characters.size() == 1) {
+            if (charNum.size() == 1) {
                 numSolutions = 0;
             }
 
-            HashMap<Character,Integer> charNum = new HashMap<>();
-            for (Character character : characters) {
-                charNum.put(character,0);
-            }
-
-            if (numSolutions == -1) numSolutions = backtrack(-1,addend1,addend2,sum,charNum, characters.toArray(new Character[0]),0);
+            if (numSolutions == -1) numSolutions = backtrack(-1,addend1,addend2,sum,charNum, charNum.keySet().toArray(new Character[0]),0);
 
             switch (numSolutions) {
                 case 0 :
@@ -98,7 +92,7 @@ public class Main {
                     result += VALID;
                 break;
                 default :
-                    result+= AMBIGUOUS;
+                    result += AMBIGUOUS;
                 break;
             }
 
