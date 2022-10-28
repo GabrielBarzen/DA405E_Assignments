@@ -87,6 +87,7 @@ public class Main {
             for (Character character : characters) {
                 charNum.put(character,0);
             }
+
             if (numSolutions == -1) numSolutions = backtrack(-1,addend1,addend2,sum,charNum, characters.toArray(new Character[0]),0);
 
             switch (numSolutions) {
