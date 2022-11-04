@@ -1,4 +1,5 @@
 import java.io.BufferedInputStream;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -24,7 +25,21 @@ public class Main {
             Arrays.sort(points);
 
             Point[] peaks = pointSort(points);
-            System.out.println(Arrays.toString(peaks));
+
+            double len = 0;
+            for (int j = 0; j < peaks.length-1; j++) {
+                double x1 = peaks[j].x;
+                double y1 = peaks[j].y;
+
+                double x2 = peaks[j].x;
+                double y2 = peaks[j+1].y;
+
+                double x3 = (y2-peaks[j].m)/peaks[j].k;
+                double y3 = peaks[j+1].y;
+
+                len += Math.sqrt(Math.pow(y1-y2,2) + Math.pow(x3-x2,2));
+            }
+            System.out.printf("%.2f%n", len);
         }
     }
 
@@ -39,7 +54,7 @@ public class Main {
 
         for (int i = 1; i < points.length; i++) {
             if(points[i].y >= tallest.y) {
-                System.out.println((points[i].y - points[i+1].y)/(points[i].x - points[i+1].x));
+
                 points[i].k = ((points[i].y - points[i+1].y)/(points[i].x - points[i+1].x));
                 points[i].m = points[i].y-(points[i].k*points[i].x);
                 tallest = points[i];
