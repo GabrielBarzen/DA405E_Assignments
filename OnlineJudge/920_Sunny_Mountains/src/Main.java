@@ -26,6 +26,11 @@ public class Main {
 
             Point[] peaks = pointSort(points);
 
+            for (Point peak : peaks) {
+                System.out.println("k: " + peak.k);
+                System.out.println("m: " + peak.m);
+            }
+
             double len = 0;
             for (int j = 0; j < peaks.length-1; j++) {
                 double x1 = peaks[j].x;
