@@ -35,7 +35,6 @@ Section 4. Dynamic programming and heuristics
 
 - 185 - Roman Numerals
 
-## Not Solved 
 Section 5. Computational geometry
 
 - 920 - Sunny Mountains
