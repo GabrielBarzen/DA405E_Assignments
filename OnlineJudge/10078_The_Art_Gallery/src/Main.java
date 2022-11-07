@@ -53,12 +53,10 @@ public class Main {
         double y;
 
         public Point(){}
-
         @Override
         public int compareTo(Point point) {
             return Double.compare(this.x, point.x);
         }
-
         @Override
         public String toString() {
             return "(" + x + "," + y + ")";
